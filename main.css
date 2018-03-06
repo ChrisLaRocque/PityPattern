@@ -1,0 +1,79 @@
+body{
+  background-color:black;
+}
+nav{
+  display:block;
+  text-align:right;
+}
+nav a{
+  font-family:'Oswald', sans-serif;
+  font-weight:bold;
+  text-transform:uppercase;
+  font-size:30px;
+  color:white;
+  text-decoration:none;
+  background:none;
+}
+nav a:hover{
+  color:black;
+  text-decoration:none;
+  background:white;
+}
+/*nav a:hover{
+  opacity: 0.5;
+}*/
+nav button{
+  border:5px solid white;
+  background:none;
+  height:56px;
+  margin-bottom:5px;
+}
+nav button:hover{
+  background-color:white;
+}
+nav button i{
+  padding:2px;
+}
+nav button a i:hover{
+  color:black!important;
+}
+h1{
+  font-family:'Oswald', sans-serif;
+  color:white;
+  text-transform:uppercase;
+  border:5px solid white;
+  width:fit-content;
+  padding:5px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:5px;
+}
+h2{
+  font-family:'Oswald', sans-serif;
+  text-decoration:underline;
+  color:white;
+  width:fit-content;
+}
+article{
+  display:block;
+  padding:0px 25px;
+  border:5px solid white;
+  width:85%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:10px;
+}
+p{
+  font-family:'Merriweather', serif;
+  color:white;
+}
+.news{
+  padding:5px 25px;
+}
+footer p{
+  text-align:center;
+  font-family:'Oswald', sans-serif;
+  color:white;
+  text-transform:uppercase;
+  color:white;
+}
