@@ -49,12 +49,12 @@ article{
   font-family:'Oswald', sans-serif;
   display:inline-block;
   font-weight:bold;
+  text-decoration: none;
   text-transform: uppercase;
   background:none;
   color:white;
   padding:0px 6px;
-  margin-top:5px;
-  margin-bottom:5px;
+  margin:5px 0;
 }
 .bold-button:hover{
   color:black;
