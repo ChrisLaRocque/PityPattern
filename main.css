@@ -1,23 +1,6 @@
 body{
   background-color:black;
 }
-.bold-button{
-  border:5px solid white;
-  font-family:'Oswald', sans-serif;
-  display:inline-block;
-  font-weight:bold;
-  text-transform: uppercase;
-  background:none;
-  color:white;
-  padding:0px 6px;
-  margin-top:5px;
-  margin-bottom:5px;
-}
-.bold-button:hover{
-  color:black;
-  text-decoration:none;
-  background:white;
-}
 nav{
   display:block;
   text-align:right;
@@ -60,6 +43,23 @@ article{
   margin-left:auto;
   margin-right:auto;
   margin-bottom:10px;
+}
+.bold-button{
+  border:5px solid white;
+  font-family:'Oswald', sans-serif;
+  display:inline-block;
+  font-weight:bold;
+  text-transform: uppercase;
+  background:none;
+  color:white;
+  padding:0px 6px;
+  margin-top:5px;
+  margin-bottom:5px;
+}
+.bold-button:hover{
+  color:black;
+  text-decoration:none;
+  background:white;
 }
 .tour{
   display:block;
