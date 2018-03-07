@@ -24,6 +24,8 @@ h1{
   background-color:white;
   text-transform:uppercase;
   width:fit-content;
+  width:-moz-fit-content; /*Firefox*/
+  width:-webkit-fit-content; /*Other browsers*/
   padding:10px;
   margin-left:auto;
   margin-right:auto;
