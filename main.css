@@ -51,8 +51,8 @@ article{
   font-family:'Oswald', sans-serif;
   display:inline-block;
   font-weight:bold;
-  text-decoration: none;
-  text-transform: uppercase;
+  text-decoration:none;
+  text-transform:uppercase;
   background:none;
   color:white;
   padding:0px 6px;
@@ -84,22 +84,22 @@ th{
   font-size:30px;
   margin-left:100px;
   margin-right:100px;
-  width: 33%;
+  width:33%;
 }
 tr{
-  border: solid;
-  border-width: 1px 0;
+  border:solid;
+  border-width:1px 0;
   border-color:white;
 }
 td{
   font-family:'Oswald', sans-serif;
   color:white;
-  font-size: 24px;
+  font-size:24px;
   text-align:center;
-  padding: 10px 0px;
+  padding:10px 0px;
 }
 td a{
-  align: center;
+  align:center;
   margin:auto;
 }
 p{
