@@ -58,9 +58,6 @@ a.nav-item.nav-link:hover {
     .navbar {
         padding: .5rem 0;
     }
-    #album-info {
-        display: none;
-    }
     .section-header {
         padding-left: 1rem;
     }
