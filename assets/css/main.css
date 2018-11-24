@@ -3,14 +3,8 @@ body {
     color: white;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
 }
-#hero {
-    background-image: url("/assets/img/console.JPG");
-    background-size: auto;
-}
-#hero-row {
-    background: rgba(0, 0, 0, 0.5);
-    padding-bottom: 2em;
-}
+
+/*Nav Section*/
 a.navbar-brand h1 {
     font-weight: bold;
 }
@@ -21,15 +15,6 @@ a.nav-item.nav-link {
 }
 a.nav-item.nav-link:hover {
     color: grey!important;
-}
-.service-logo {
-    border: 3px solid white;
-    border-radius: 10px;
-    padding: 1em;
-    margin-bottom: 2em;
-}
-.service-logo:hover {
-    opacity: 0.5;
 }
 .fa {
     color: white;
@@ -42,3 +27,34 @@ a.nav-item.nav-link:hover {
     color: white;
 }
 
+/*Hero Section*/
+#hero {
+    background-image: url("/assets/img/console.JPG");
+    background-size: auto;
+}
+#hero-row {
+    background: rgba(0, 0, 0, 0.5);
+    padding-bottom: 2em;
+}
+.service-logo {
+    border: 3px solid white;
+    border-radius: 10px;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+.service-logo:hover {
+    opacity: 0.5;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 576px) {
+    .navbar {
+        padding: .5rem 0;
+    }
+    #album-info {
+        display: none;
+    }
+    .section-header {
+        padding-left: 1rem;
+    }
+}
