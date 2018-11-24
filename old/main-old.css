@@ -1,0 +1,118 @@
+body{
+  background-color:black;
+}
+nav{
+  display:block;
+  text-align:right;
+  margin:0 12px;
+}
+nav a{
+  font-size:30px;
+  color:white;
+  text-decoration:none;
+  background:none;
+}
+nav button i{
+  padding:2px;
+}
+nav button a i:hover{
+  color:black!important;
+}
+h1{
+  font-family:'Oswald', sans-serif;
+  color:black;
+  background-color:white;
+  text-transform:uppercase;
+  width:fit-content;
+  width:-moz-fit-content; /*Firefox*/
+  width:-webkit-fit-content; /*Other browsers*/
+  padding:10px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:10px;
+}
+h2{
+  font-family:'Oswald', sans-serif;
+  text-decoration:underline;
+  color:white;
+  width:fit-content;
+}
+article{
+  display:block;
+  padding:0px 25px;
+  border:5px solid white;
+  width:85%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:10px;
+}
+.bold-button{
+  border:5px solid white;
+  font-family:'Oswald', sans-serif;
+  display:inline-block;
+  font-weight:bold;
+  text-decoration:none;
+  text-transform:uppercase;
+  background:none;
+  color:white;
+  padding:0px 6px;
+  margin:5px 0;
+}
+.bold-button:hover{
+  color:black;
+  text-decoration:none;
+  background:white;
+}
+.tour{
+  display:block;
+  width:69%;
+  align:center;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:10px;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+}
+th{
+  font-family:'Oswald', sans-serif;
+  text-transform:uppercase;
+  text-align:center;
+  color:black;
+  background-color:white;
+  font-size:30px;
+  margin-left:100px;
+  margin-right:100px;
+  width:33%;
+}
+tr{
+  border:solid;
+  border-width:1px 0;
+  border-color:white;
+}
+td{
+  font-family:'Oswald', sans-serif;
+  color:white;
+  font-size:24px;
+  text-align:center;
+  padding:10px 0px;
+}
+td a{
+  align:center;
+  margin:auto;
+}
+p{
+  font-family:'Merriweather', serif;
+  color:white;
+}
+.news{
+  padding:0px 25px 5px 25px;
+}
+footer p{
+  text-align:center;
+  font-family:'Oswald', sans-serif;
+  color:white;
+  text-transform:uppercase;
+  color:white;
+}
