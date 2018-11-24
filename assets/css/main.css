@@ -11,6 +11,9 @@ body {
     background: rgba(0, 0, 0, 0.5);
     padding-bottom: 2em;
 }
+a.navbar-brand h1 {
+    font-weight: bold;
+}
 a.nav-item.nav-link {
     font-size: 1.25em;
     color: white!important;
