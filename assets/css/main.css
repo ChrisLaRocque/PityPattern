@@ -9,6 +9,7 @@ body {
 }
 #hero-row {
     background: rgba(0, 0, 0, 0.5);
+    padding-bottom: 3em;
 }
 a.nav-item.nav-link {
     font-size: 1.25em;
