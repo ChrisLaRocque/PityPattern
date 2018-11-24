@@ -46,6 +46,13 @@ a.nav-item.nav-link:hover {
     opacity: 0.5;
 }
 
+/*Tour widget*/
+.bit-widget .bit-offers {
+    background-color: white!important;
+    border: 1px solid white!important;
+    color: black!important;
+} 
+
 /*Media Queries*/
 @media screen and (max-width: 576px) {
     .navbar {
