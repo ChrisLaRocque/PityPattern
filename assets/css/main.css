@@ -4,7 +4,7 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
 }
 #hero {
-    background-image: url("/assets/imgs/console.JPG");
+    background-image: url("/assets/img/console.JPG");
     background-size: auto;
 }
 #hero-row {
