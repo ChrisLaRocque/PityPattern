@@ -29,8 +29,8 @@ a.nav-item.nav-link:hover {
 
 /*Hero Section*/
 #hero {
-    background-image: url("/assets/img/console.JPG");
-    background-size: auto;
+    /*background-image: url("/assets/img/console.JPG");
+    background-size: auto;*/
 }
 #hero-row {
     background: rgba(0, 0, 0, 0.5);
