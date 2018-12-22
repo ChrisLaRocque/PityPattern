@@ -45,6 +45,17 @@ a.nav-item.nav-link:hover {
 .service-logo:hover {
     opacity: 0.5;
 }
+.cover-img {
+position: relative;
+}
+
+.cover-img i {
+top: 50%;
+left: 50%;
+position: absolute;
+transform: translate(-50%, -50%);
+font-size: 75px;
+}
 
 /*Tour widget*/
 .bit-widget .bit-offers {

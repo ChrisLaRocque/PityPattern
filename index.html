@@ -31,6 +31,8 @@
     
   </head>
   <body>
+    
+    <!--Nav-->
     <section id="nav">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-dark mt-1">
@@ -54,13 +56,20 @@
             </nav>
         </div>
     </section>
+    
+    <!--Intro Video-->
     <section id="video">
         <div class="container-fluid">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xQsAtT4agAg?rel=0"></iframe>
+            <div class="hero-video">
+                <div class="cover-img">
+                    <i class="fa fa-play-circle-o fa-4x text-center"></i>
+                    <img class="img-fluid hero-cover" alt="" src="/assets/img/intro-video-cover.png" />
+                </div>
             </div>
         </div>
     </section>
+    
+    <!--Album Art-->
     <section id="hero">
         <div class="container">
             <div class="row" id="hero-row">
@@ -96,6 +105,8 @@
             </div>    
         </div>
     </section>
+    
+    <!--Picture Carousel-->
     <section id="recording-pics">
         <div class="container">
             <div class="row my-3 section-header">
@@ -159,6 +170,8 @@
             </div>
         </div>
     </section>
+    
+    <!--Bandsintown Widget-->
     <section id="shows">
         <div class="container">
             <div class="row my-3 section-header">
@@ -188,5 +201,11 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--Stops video carousel from auto-advancing-->
+    <script>
+        $('.cover-img').click(function(){
+            $('.hero-video').html('<div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xQsAtT4agAg?rel=0&autoplay=1"></iframe></div>');
+        }); 
+    </script>
   </body>
 </html>
