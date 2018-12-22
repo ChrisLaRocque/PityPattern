@@ -4,6 +4,10 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
 }
 
+section {
+    margin: 1em 0;
+}
+
 /*Nav Section*/
 a.navbar-brand h1 {
     font-weight: bold;
@@ -27,11 +31,21 @@ a.nav-item.nav-link:hover {
     color: white;
 }
 
-/*Hero Section*/
-#hero {
-    /*background-image: url("/assets/img/console.JPG");
-    background-size: auto;*/
+/*Full width video*/
+.cover-img {
+position: relative;
 }
+
+.cover-img i {
+top: 50%;
+left: 50%;
+position: absolute;
+transform: translate(-50%, -50%);
+font-size: 60px;
+} 
+
+/*Hero Section*/
+
 #hero-row {
     background: rgba(0, 0, 0, 0.5);
     padding-bottom: 2em;
@@ -45,16 +59,11 @@ a.nav-item.nav-link:hover {
 .service-logo:hover {
     opacity: 0.5;
 }
-.cover-img {
-position: relative;
-}
 
-.cover-img i {
-top: 50%;
-left: 50%;
-position: absolute;
-transform: translate(-50%, -50%);
-font-size: 75px;
+/*Video*/
+.video-cover h5 {
+    border: solid white 2px;
+    border-top: none;
 }
 
 /*Tour widget*/

@@ -49,6 +49,7 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ml-auto">
                         <a class="nav-item nav-link" href="https://pitypattern.bandcamp.com/releases">Music</a>
+                        <a class="nav-item nav-link" href="#videos">Videos</a>
                         <!--<a class="nav-item nav-link" href="https://pitypattern.bandcamp.com/merch">Merch</a>-->
                         <a class="nav-item nav-link" href="#shows">Shows</a>
                     </div>
@@ -58,9 +59,9 @@
     </section>
     
     <!--Intro Video-->
-    <section id="video">
+    <section id="intro">
         <div class="container-fluid">
-            <div class="hero-video">
+            <div class="video-cover" id="xQsAtT4agAg">
                 <div class="cover-img">
                     <i class="fa fa-play-circle-o fa-4x text-center"></i>
                     <img class="img-fluid hero-cover" alt="" src="/assets/img/intro-video-cover.png" />
@@ -103,6 +104,57 @@
                 -->
                 </div>
             </div>    
+        </div>
+    </section>
+
+    <!--Videos Section-->
+    <section id="videos">
+        <div class="container">
+            <div class="row my-3 section-header">
+                <h3>Videos</h3>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row featured-video mb-4">
+            </div>
+            <div class="row">
+                <!----<div class="col-lg-4 col-sm-12 mb-2 mx-auto">
+                    <div class="video-cover" id="bVgHk8hxWrc">
+                        <div class="cover-img">
+                            <i class="fa fa-play-circle-o fa-4x text-center"></i>
+                            <img class="img-fluid hero-cover" alt="" src="/assets/img/cantread-cover.png" />
+                        </div>
+                        <h5 class="my-2">Can't Read<br>(Music Video)</h5>
+                    </div>
+                </div>-->
+                <div class="col-lg-4 col-sm-12 mb-2 mx-auto">
+                    <div class="video-cover" id="vjDn5GowDS8">
+                        <div class="cover-img">
+                            <i class="fa fa-play-circle-o fa-4x text-center"></i>
+                            <img class="img-fluid hero-cover" alt="" src="/assets/img/shakeit-cover.png" />
+                        </div>
+                        <h5 class="p-2">Shake It<br>(Album Promo)</h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 mb-2 mx-auto">
+                    <div class="video-cover" id="4mi74_gh-1I">
+                        <div class="cover-img">
+                            <i class="fa fa-play-circle-o fa-4x text-center"></i>
+                            <img class="img-fluid hero-cover" alt="" src="/assets/img/getbent-cover.png" />
+                        </div>
+                        <h5 class="p-2">Get Bent<br>(Album Promo)</h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 mb-4 mx-auto">
+                    <div class="video-cover" id="scQ_hKwOho8">
+                        <div class="cover-img">
+                            <i class="fa fa-play-circle-o fa-4x text-center"></i>
+                            <img class="img-fluid hero-cover" alt="" src="/assets/img/ridindirty-cover.png" />
+                        </div>
+                        <h5 class="p-2">Ridin' Dirty<br>(Album Promo)</h5>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     
@@ -182,6 +234,8 @@
             <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script><a class="bit-widget-initializer" data-artist-name="Pity Pattern" data-display-local-dates="false" data-display-past-dates="false" data-auto-style="false" data-text-color="#ffffff" data-link-color="#ffffff" data-background-color="rgba(0,0,0,0)" data-display-limit="15" data-link-text-color="#FFFFFF" data-display-lineup="false" data-separator-color="rgba(255, 255, 255, 0.5)" data-font="Helvetica" data-display-track-button="false"></a>
         </div>
     </section>
+
+    <!--Footer-->
     <section id="footer">
         <div class="container mb-3">
             <div class="row mb-3">
@@ -191,7 +245,7 @@
                 <a href="mailto:pitypattern@gmail.com" class="mx-auto fa fa-envelope"></a>
             </div>
             <div class="row">
-                <p class="mx-auto">&copy;2018 Pity Pattern</p>
+                <p class="mx-auto"><strong>&copy;2018 Pity Pattern</strong></p>
             </div>
         </div>
     </section>
@@ -201,10 +255,13 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <!--Stops video carousel from auto-advancing-->
+    
+    <!--Populates featured video window-->
     <script>
-        $('.cover-img').click(function(){
-            $('.hero-video').html('<div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xQsAtT4agAg?rel=0&autoplay=1"></iframe></div>');
+        $('.video-cover').click(function(){
+            var id =  $(this).attr('id')
+            $('.featured-video').show();    
+            $('.featured-video').html('<div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/' + id + '?rel=0&autoplay=1"></iframe></div>');
         }); 
     </script>
   </body>
