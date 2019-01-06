@@ -61,7 +61,7 @@
     <!--Intro Video-->
     <section id="intro">
         <div class="container-fluid">
-            <div class="video-cover" id="xQsAtT4agAg">
+            <div class="hero-video-cover" id="xQsAtT4agAg">
                 <div class="cover-img">
                     <i class="fa fa-play-circle-o fa-4x text-center"></i>
                     <img class="img-fluid hero-cover" alt="" src="/assets/img/intro-video-cover.png" />
@@ -262,6 +262,12 @@
             var id =  $(this).attr('id')
             $('.featured-video').show();    
             $('.featured-video').html('<div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/' + id + '?rel=0&autoplay=1"></iframe></div>');
+        }); 
+    </script>
+    <script>
+        $('.hero-video-cover').click(function(){
+            var id =  $(this).attr('id')    
+            $('.hero-video-cover').html('<div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/' + id + '?rel=0&autoplay=1"></iframe></div>');
         }); 
     </script>
   </body>
