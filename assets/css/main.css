@@ -59,7 +59,15 @@ font-size: 60px;
 .service-logo:hover {
     opacity: 0.5;
 }
+.spotify {
 
+}
+.bandcamp {
+
+}
+.apple-music {
+    
+}
 /*Video*/
 .video-cover h5 {
     border: solid white 2px;
