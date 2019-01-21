@@ -30,6 +30,9 @@ a.nav-item.nav-link:hover {
     opacity: .5;
     color: white;
 }
+.navbar-toggler {
+    margin-left: 3vh;
+}
 
 /*Full width video*/
 .cover-img {
