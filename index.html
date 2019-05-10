@@ -1,51 +1,291 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115420733-1"></script>
-  <script>
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <title>Pity Pattern</title>
+    <link rel="icon" type="image/png" href="/assets/img/vinyl.png">
+    <meta name="description" content="Pity Pattern is a rock band from Boston." />
+    <meta property="og:title" content="Pity Pattern" />
+    <meta property="og:description" content="Pity Pattern is a rock band from Boston." />
+    <meta property="og:image" content="http://pitypattern.com/assets/img/pp_og.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://pitypattern.com" />
+    <meta property="fb:app_id" content="544299992736654" />
+     
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130572817-1"></script>
+    <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'UA-115420733-1');
-  </script>
-  <!-- End GA Script -->
-  <title>Pity Pattern</title>
-  <meta property="og:title" content="Pity Pattern" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Merriweather|Oswald" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="main.css">
-</head>
-<body>
-  <nav>
-    <a class="bold-button" href="https://pitypattern.bandcamp.com/music" target="_blank">Music</a>
-    <!--<a class="bold-button" href="/tour">Tour</a>-->
-    <a class="bold-button" href="https://pitypattern.bandcamp.com/merch" target="_blank">Shop</a>
-    <button class="bold-button">
-      <a href="https://www.facebook.com/pitypattern/" target="_blank"><i class="fa fa-facebook" style="font-size:36px;color:white"></i></a>
-      <a href="https://www.instagram.com/pitypattern/" target="_blank"><i class="fa fa-instagram" style="font-size:36px;color:white"></i></a>
-      <a href="mailto:hi@pitypattern.com" target="_blank"><i class="fa fa-envelope" style="font-size:36px;color:white"></i></a>
-      <!--<a href="https://www.youtube.com/watch?v=HPPj6viIBmU" target="_blank"><i class="fa fa-empire" style="font-size:36px;color:white"></i></a>-->
-    </button>
-  </nav>
-  <div class="news">
-    <h1>News</h1>
-    <article>
-    <h2>KILL ME PLEASE</h2>
-    <p>Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.  </p>
-    <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends. </p>
-    <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends. </p>
-    </article>
-    <article>
-    <h2>KILL ME Again</h2>
-    <p>Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.  </p>
-    <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends. </p>
-    <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends. </p>
-    </article>
-  </div>
-  <footer>
-    <p>&copy;2018 Pity Pattern</p>
-  </footer>
-</body>
+    gtag('config', 'UA-130572817-1');
+    </script>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Site CSS-->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    
+  </head>
+  <body>
+    
+    <!--Nav-->
+    <section id="nav">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark mt-1">
+                <a class="navbar-left" href="#"><img src="/assets/img/PP-Square-White-250.png" style="height: 60px; border-radius: 50%"></a>
+                <div class="row ml-auto">
+                    <a href="https://www.facebook.com/pitypattern/" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/pitypattern/" class="fa fa-instagram"></a>
+                    <a href="https://twitter.com/pitypattern" class="fa fa-twitter"></a>
+                    <a href="mailto:pitypattern@gmail.com" class="fa fa-envelope"></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link" href="https://pitypattern.bandcamp.com/releases">Music</a>
+                        <a class="nav-item nav-link" href="#videos">Videos</a>
+                        <a class="nav-item nav-link" href="https://pitypattern.bandcamp.com/merch">Merch</a>
+                        <a class="nav-item nav-link" href="#shows">Shows</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    
+    <!--Intro Video-->
+    <section id="intro">
+        <div class="container">
+            <div class="hero-video-cover" id="Dc5ZRt7n4Rs">
+                <div class="cover-img">
+                    <i class="fa fa-play-circle-o fa-4x text-center"></i>
+                    <img class="img-fluid hero-cover" alt="" src="/assets/img/cantread-cover-hero.png" />
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--Album Art-->
+    <section id="hero">
+        <div class="container">
+            <div class="row" id="hero-row">
+                <div class="col-lg-6 col-sm-8 mx-auto mt-3">
+                    <a href="https://pitypattern.bandcamp.com/music/sorry-as-always-for-everything">
+                        <img src="assets/img/PP-SAAFE-Window.png" class="img-fluid" />
+                    </a>
+                </div>
+                <div class="col-lg-6 col-sm-12 mt-3">
+                    <div class="row" id="album-info">
+                        <div class="col">
+                            <h3 style="font-weight: 800;">Pity Pattern</h3><br>
+                            <h2>Sorry, As Always, For Everything.</h2><br>
+                            <h4><em>Available Everywhere You Hear Music</em></h4>
+                        </div> 
+                    </div>
+                    <!----<div class="row mx-auto mt-4 rounded">
+                        <div class="my-auto mx-auto col-lg-4 col-sm-10">
+                            <a href="https://open.spotify.com/artist/2EFO3laid2zP7GsGI5y7Am?si=VYhDXxnkQ0GyaiC5Xhy53Q">
+                                <img src="assets/img/logos/Spotify_Logo_CMYK_White.png" class="img-fluid service-logo spotify" />
+                            </a>
+                        </div> 
+                        <div class="my-auto mx-auto col-lg-4 col-sm-10">
+                            <a href="https://itunes.apple.com/us/artist/pity-pattern/id1447899654">
+                                <img src="assets/img/logos/Apple_Music_Logo.png" class="img-fluid service-logo apple-music" />
+                            </a>
+                        </div> 
+                        <div class="my-auto mx-auto col-lg-4 col-sm-10">
+                            <a href="https://pitypattern.bandcamp.com/releases">
+                                <img src="assets/img/logos/bandcamp-logo.png" class="img-fluid service-logo bandcamp" />
+                            </a>
+                        </div>
+                    </div>-->
+                </div>
+            </div>    
+        </div>
+    </section>
+
+    <!--Videos Section-->
+    <section id="videos">
+        <div class="container">
+            <div class="row my-3 section-header">
+                <h3>Videos</h3>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row featured-video mb-4">
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-12 mb-2 mx-auto">
+                    <div class="video-cover" id="Dc5ZRt7n4Rs">
+                        <div class="cover-img">
+                            <i class="fa fa-play-circle-o fa-4x text-center"></i>
+                            <img class="img-fluid hero-cover" alt="" src="/assets/img/cantread-cover.png" />
+                        </div>
+                        <h5 class="p-2">Can't Read<br>(Music Video)</h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 mb-2 mx-auto">
+                    <div class="video-cover" id="vjDn5GowDS8">
+                        <div class="cover-img">
+                            <i class="fa fa-play-circle-o fa-4x text-center"></i>
+                            <img class="img-fluid hero-cover" alt="" src="/assets/img/shakeit-cover.png" />
+                        </div>
+                        <h5 class="p-2">Shake It<br>(Album Promo)</h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 mb-2 mx-auto">
+                    <div class="video-cover" id="4mi74_gh-1I">
+                        <div class="cover-img">
+                            <i class="fa fa-play-circle-o fa-4x text-center"></i>
+                            <img class="img-fluid hero-cover" alt="" src="/assets/img/getbent-cover.png" />
+                        </div>
+                        <h5 class="p-2">Get Bent<br>(Album Promo)</h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 mb-4 mx-auto">
+                    <div class="video-cover" id="scQ_hKwOho8">
+                        <div class="cover-img">
+                            <i class="fa fa-play-circle-o fa-4x text-center"></i>
+                            <img class="img-fluid hero-cover" alt="" src="/assets/img/ridindirty-cover.png" />
+                        </div>
+                        <h5 class="p-2">Ridin' Dirty<br>(Album Promo)</h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 mb-4 mx-auto">
+                    <div class="video-cover" id="xQsAtT4agAg">
+                        <div class="cover-img">
+                            <i class="fa fa-play-circle-o fa-4x text-center"></i>
+                            <img class="img-fluid hero-cover" alt="" src="/assets/img/intro-video-cover.png" />
+                        </div>
+                        <h5 class="p-2">Hey, We're Pity Pattern<br>(Album Promo)</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--Picture Carousel-->
+    <section id="recording-pics">
+        <div class="container">
+            <div class="row my-3 section-header">
+                <h3>Recording (2018)</h3>
+            </div>
+        </div>
+        <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img class="d-block w-100" src="assets/img/recording-pics/listening_back.jpg" alt="Listening back">
+                        </div>
+                        <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/img/recording-pics/devin_tracking_bass.jpg" alt="Devin tracking bass">
+                        </div>
+                        <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/img/recording-pics/adam_tracking_drums.jpg" alt="Adam tracking drums">
+                        </div>
+                        <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/img/recording-pics/chris_at_desk.jpg" alt="Chris at desk">
+                        </div>
+                        <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/img/recording-pics/dev.JPG" alt="Devin smiling">
+                        </div>
+                        <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/img/recording-pics/getting_drum_sounds.JPG" alt="Getting drum sounds">
+                        </div>
+                        <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/img/recording-pics/devin_tracking_bass_2.JPG" alt="Devin tracking bass again">
+                        </div>
+                        <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/img/recording-pics/adam_setting_up.JPG" alt="Adam getting sounds">
+                        </div>
+                        <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/img/recording-pics/drums_miced_up.JPG" alt="Drums miced up">
+                        </div>
+                        <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/img/recording-pics/adam.JPG" alt="Adam">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+            </div>
+        </div>
+    </section>
+    
+    <!--Bandsintown Widget-->
+    <section id="shows">
+        <div class="container">
+            <div class="row my-3 section-header">
+                <h3>Shows</h3>
+            </div>
+        </div>
+        <div class="container">
+            <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script><a class="bit-widget-initializer" data-artist-name="Pity Pattern" data-display-local-dates="false" data-display-past-dates="false" data-auto-style="false" data-text-color="#ffffff" data-link-color="#ffffff" data-background-color="rgba(0,0,0,0)" data-display-limit="15" data-link-text-color="#FFFFFF" data-display-lineup="false" data-separator-color="rgba(255, 255, 255, 0.5)" data-font="Helvetica" data-display-track-button="false"></a>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <section id="footer">
+        <div class="container mb-3">
+            <div class="row mb-3">
+                <a href="https://www.facebook.com/pitypattern/" class="mx-auto fa fa-facebook"></a>
+                <a href="https://www.instagram.com/pitypattern/" class="mx-auto fa fa-instagram"></a>
+                <a href="https://twitter.com/pitypattern" class="mx-auto fa fa-twitter"></a>
+                <a href="mailto:pitypattern@gmail.com" class="mx-auto fa fa-envelope"></a>
+            </div>
+            <div class="row">
+                <p class="mx-auto"><strong>&copy;2018 Pity Pattern</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <!--Populates featured video window-->
+    <script>
+        $('.video-cover').click(function(){
+            var id =  $(this).attr('id')
+            $('.featured-video').show();    
+            $('.featured-video').html('<div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/' + id + '?rel=0&autoplay=1"></iframe></div>');
+        }); 
+    </script>
+    <script>
+        $('.hero-video-cover').click(function(){
+            var id =  $(this).attr('id')    
+            $('.hero-video-cover').html('<div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/' + id + '?rel=0&autoplay=1"></iframe></div>');
+        }); 
+    </script>
+  </body>
 </html>
